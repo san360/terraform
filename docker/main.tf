@@ -10,3 +10,9 @@ module "container" {
   int_port = "${var.int_port}"
   ext_port = "${var.ext_port}"
 }
+
+resource "null_resource" "null_id" {
+  provisioner "local-exec" {
+    command = "echo ${module.container.container_name}:${module.container.ip_address} >> container.txt" 
+  }
+}
