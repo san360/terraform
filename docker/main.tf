@@ -1,11 +1,11 @@
 module "image" {
   source = "./image"
-  image = "${var.image}"
+  image = "${lookup(var.image,var.env)}"
 }
 
 module "container" {
   source = "./container"
-  name = "${var.container_name}"
+  name = "${lookup(var.container_name,var.env)}"
   image = "${module.image.image_out}"
   int_port = "${var.int_port}"
   ext_port = "${var.ext_port}"
