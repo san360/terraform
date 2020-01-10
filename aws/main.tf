@@ -5,14 +5,14 @@ provider "aws" {
 }
 
 #Deploy storage resources
-/*module "s3_bucket" {
+module "s3_bucket" {
   source = "./storage"
   project_name = "${var.project_name}"
 }
 
 output "bucket_name" {
   value = "${module.s3_bucket.bucketname}"
-}*/
+}
 
 #---Network module-----
 module "network" {

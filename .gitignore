@@ -5,7 +5,8 @@ aws/storage/terraform.tfstate
 aws/storage/.terraform/plugins/darwin_amd64/lock.json
 aws/storage/.terraform.tfstate.lock.info
 aws/.terraform/plugins/darwin_amd64/lock.json
-aws/terraform.tfvars
 aws/terraform.tfstate
 aws/terraform.tfstate.backup
 aws/.terraform/modules/modules.json
+aws/.terraform/plugins/darwin_amd64/terraform-provider-random_v2.2.1_x4
+aws/.terraform/plugins/darwin_amd64/terraform-provider-template_v2.1.2_x4
